@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23097BB4158E4C66FE3407AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		23097BB4158E4C66FE3407AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2DE0C9B383FE923E7068EB36 /* Pods-JDSFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDSFramework_Example.debug.xcconfig"; path = "Target Support Files/Pods-JDSFramework_Example/Pods-JDSFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4511EFCA5EC5CDBB0B3202D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4511EFCA5EC5CDBB0B3202D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JDSFramework_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDSFramework_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		7201483C8144B669EB694416 /* Pods-JDSFramework_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDSFramework_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JDSFramework_Tests/Pods-JDSFramework_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D784BAF7F65E6026736B1052 /* Pods_JDSFramework_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JDSFramework_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54BD87014280E0D14AC7D22 /* Pods-JDSFramework_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDSFramework_Example.release.xcconfig"; path = "Target Support Files/Pods-JDSFramework_Example/Pods-JDSFramework_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FA40F44E0D18FAFCF61F9C73 /* JDSFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JDSFramework.podspec; path = ../JDSFramework.podspec; sourceTree = "<group>"; };
+		FA40F44E0D18FAFCF61F9C73 /* JDSFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JDSFramework.podspec; path = ../JDSFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				7201483C8144B669EB694416 /* Pods-JDSFramework_Tests.debug.xcconfig */,
 				7154E5AB0EC23606EF629938 /* Pods-JDSFramework_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +170,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				CD632DA33B3B805A0EBE16ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +225,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -282,24 +281,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD632DA33B3B805A0EBE16ED /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JDSFramework_Example/Pods-JDSFramework_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JDSFramework/JDSFramework.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JDSFramework.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JDSFramework_Example/Pods-JDSFramework_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D4617F25D37B234022541E5C /* [CP] Check Pods Manifest.lock */ = {

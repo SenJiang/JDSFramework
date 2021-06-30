@@ -1,0 +1,16 @@
+PODS:
+  - JDSFramework (0.0.1)
+
+DEPENDENCIES:
+  - JDSFramework (from `../`)
+
+EXTERNAL SOURCES:
+  JDSFramework:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JDSFramework: 3a4e7025a34a3fecd0d364e5a35f07d17a93af2e
+
+PODFILE CHECKSUM: 7cf1de9c7c714825ae934700ce9687576b9d74be
+
+COCOAPODS: 1.10.1

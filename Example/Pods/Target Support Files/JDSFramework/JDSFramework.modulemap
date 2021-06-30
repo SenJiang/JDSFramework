@@ -1,0 +1,6 @@
+framework module JDSFramework {
+  umbrella header "JDSFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
